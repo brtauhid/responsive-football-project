@@ -5,7 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* common styles and Utility */
+/**************** COMMON STYLES AND UTILITY *****************/
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFFFF;
@@ -48,14 +48,19 @@ header{
     height: 438px;
 }
 
-/* Player blog style */
+/***************** PLAYER BLOG STYLE *****************/
 
 main{
     display: flex;
     justify-content: center;
 }
 
-
+.player-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+}
 .single-player-blog-item{
     max-width: 330px;
     max-height: 474px;
@@ -74,13 +79,6 @@ main{
     height: 154px;
 }
 
-.player-blogs{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    
-}
-
 .player-info h1 {font-size: 28px;
     color: #18191F;
     font-weight: 700;
@@ -90,27 +88,8 @@ main{
 p.player-details {
     color: #6C6C6C;}
 
-/* hover effect on button header */
-.header-content:hover .fa-arrow-right {
-    margin-left: 20px;
-}
 
-.fa-arrow-right {
-        transition: .3s;
-    }
-    
-.header-content:hover .header-image-right img {
-    transform: rotate(5deg);
-}
-
-.header-image-right img {
-    transition: .3s;
-}
-.single-player-blog-item:hover {
-    transform: scale(1.08);
-}
-
-/* All Highlight Section Styles */
+/***************** ALL HIGHLIGHT SECTION STYLES *****************/
 .all-highlights{
     display: flex;
     justify-content: center;
@@ -148,12 +127,9 @@ p.player-details {
 .highlight-boxed-btn .fa-arrow-right{
     margin-left: 10px;
 }
-.highlight-boxed-btn:hover .fa-arrow-right {
-    margin-left: 20px;
-}
 
 
-/* blog section style */
+/***************** BLOG SECTION STYLES *****************/
 .blog{
     display: flex;
     justify-content: center;
@@ -193,7 +169,7 @@ section.blog h1 {
     text-align: center;
 }
 
-/* Footer area styles */
+/***************** FOOTER AREA STYLES *****************/
 footer{
     display: flex;
     justify-content: center;
@@ -226,7 +202,31 @@ footer{
 
 }
 
-/* Media Queries */
+/****************** ALL HOVER EFFECT STYLES ******************/
+.header-content:hover .fa-arrow-right {
+    margin-left: 20px;
+}
+
+.fa-arrow-right {
+        transition: .3s;
+    }
+    
+.header-content:hover .header-image-right img {
+    transform: rotate(5deg);
+}
+
+.header-image-right img {
+    transition: .3s;
+}
+.single-player-blog-item:hover {
+    transform: scale(1.08);
+}
+.highlight-boxed-btn:hover .fa-arrow-right {
+    margin-left: 20px;
+}
+
+
+/***************** MEDIA QUERIES *****************/
 @media only screen and (max-width:688px) {
     .header-content{
         flex-direction: column;
