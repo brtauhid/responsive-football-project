@@ -46,6 +46,12 @@ header{
 .header-image-right img{
     width: 556px;
     height: 438px;
+    transition: .3s;
+
+}
+
+.fa-arrow-right {
+    transition: .3s;
 }
 
 /***************** PLAYER BLOG STYLE *****************/
@@ -206,21 +212,11 @@ footer{
 .header-content:hover .fa-arrow-right {
     margin-left: 20px;
 }
-
-.fa-arrow-right {
-        transition: .3s;
-    }
     
 .header-content:hover .header-image-right img {
     transform: rotate(5deg);
 }
 
-.header-image-right img {
-    transition: .3s;
-}
-.single-player-blog-item:hover {
-    transform: scale(1.08);
-}
 .highlight-boxed-btn:hover .fa-arrow-right {
     margin-left: 20px;
 }
