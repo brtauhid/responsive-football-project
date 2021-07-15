@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* common styles and Utility */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+header{
+    display:flex;
+    justify-content: center;
+}
+.header-content{
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.header-title h1{
+    color: #fff;
+    font-size: 64px;
+}
+
+.header-boxed-btn, .highlight-boxed-btn{
+    font-size:16px;
+    background-color: #E02C6D;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 50px;
+    margin-top: 27px;
+    color: #fff;
+}
+
+.header-boxed-btn .fa-arrow-right {
+    margin-left: 8px;
+}
+.header-image-right img{
+    width: 556px;
+    height: 438px;
+}
+
+/* Player blog style */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+.single-player-blog-item{
+    max-width: 330px;
+    max-height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 15px #3c393999;
+    transition: .3s;
+}
+
+.player-image img{
+    width:300px;
+    height: 256px;
+}
+
+.player-info{
+    width:300px;
+    height: 154px;
+}
+
+.player-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+}
+
+.player-info h1 {font-size: 28px;
+    color: #18191F;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 10px;}
+
+p.player-details {
+    color: #6C6C6C;}
+
+/* hover effect on button header */
+.header-content:hover .fa-arrow-right {
+    margin-left: 20px;
+}
+
+.fa-arrow-right {
+        transition: .3s;
+    }
+    
+.header-content:hover .header-image-right img {
+    transform: rotate(5deg);
+}
+
+.header-image-right img {
+    transition: .3s;
+}
+.single-player-blog-item:hover {
+    transform: scale(1.08);
+}
+
+/* All Highlight Section Styles */
+.all-highlights{
+    display: flex;
+    justify-content: center;
+    margin-top: 165px;
+    align-items: center;
+}
+.highlight-text{
+    width: 466px;
+    height: 309px;
+}
+.highlight-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    color:#0A0826 ;
+}
+.highlight-text p{
+    width: 404px;
+    height: 113px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.highlight-img img{
+    width: 567px;
+    height:427px;
+    margin-left: 69px;
+}
+.highlight-boxed-btn{
+    margin-top:22px;
+    transition: .3s;
+    font-weight: 400;
+}
+.highlight-boxed-btn .fa-arrow-right{
+    margin-left: 10px;
+}
+.highlight-boxed-btn:hover .fa-arrow-right {
+    margin-left: 20px;
+}
+
+
+/* blog section style */
+.blog{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-img img{
+    width: 570px;
+    padding-right: 20px;
+}
+.single-blog-item img{
+    width: 200px;
+}
+
+.blog-items{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 20px; 
+}
+
+section.blog h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #0A0826;
+    margin-top: 165px;
+    margin-bottom: 30px;
+}
+
+.single-blog-item h3 {
+    color: #444;
+    text-align: center;
+}
+
+/* Footer area styles */
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 158px;
+
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 63px;
+    
+}
+
+.footer-logo img{
+    width: 484px;
+    height: 110px;
+}
+
+.footer-social-icons .fab{
+    margin-left: 14px;
+    color: #AAAEBA;
+    width: 32px;
+    height: 32px;
+}
+.footer-social-icons p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+/* Media Queries */
+@media only screen and (max-width:688px) {
+    .header-content{
+        flex-direction: column;
+        margin-bottom: 47px;
+    }
+
+    .header-image-right img{
+        width: 329px;
+        height: 259px;
+        margin-bottom: 61px;
+    }
+    .header-title h1 {
+        margin-left: 16px;
+        padding-top: 30px;
+    }
+    
+    .header-boxed-btn {
+        margin-left: 24px;
+        margin-bottom: 10px;
+    }
+    .player-blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .all-highlights{
+        flex-direction: column;
+        width: 329px;
+        height: 299px;
+        margin-left: 77px;
+    }
+    .highlight-text h1{
+        font-size: 30px;
+    }
+    .highlight-img img {
+        width: 328px;
+        height: 248px;
+        margin-right: 150px;
+        margin-top: 29px;
+    }
+
+    .highlight-text p{
+        max-width: 400px;
+    }
+    section.blog h1 {
+        font-size: 30px;
+    }
+    .blog-container {
+        flex-direction: column;
+    }
+    .blog-items {
+        grid-template-columns: repeat(2, 200px);
+    }
+    .footer-logo img {
+        width: 270px;
+        height: 65px;
+    }
+    .footer-social-icons {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .footer-social-icons p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .blog-img img {
+        width: 425px;
+    }
+    .single-blog-item img {
+        height: 141px;
+    }
+}
+
+
+
